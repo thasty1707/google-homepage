@@ -20,7 +20,7 @@ header {
 #navbar {
     list-style-type: none;
     margin: 0;
-    padding: 13px 0;
+    padding: 20px 0;
     width: 100vw;
 }
  li {
@@ -78,7 +78,9 @@ header {
     grid-template-rows: 1fr 1fr;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
     justify-content: center;
+    width: 100%;
 }
 
 #logo {
@@ -87,7 +89,8 @@ header {
         transition-duration: 0.4s, 0.4s, 0.4s;
         transition-timing-function: ease, ease, ease;
         transition-delay: 0s, 0s, 0s;
-    padding-top: 169px; 
+    padding-top: 169px;
+    padding-bottom: 15px;
     width: auto;
     font-size: small;
     background: #fff;
@@ -95,11 +98,17 @@ header {
     justify-self: center;
 }
 
+#srch_bttns{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
 #srch_bttn {
     position: relative;
     bottom: 0;
-    left: 0;
-    margin: 11px 4px;
+    margin: 11px 4px 11px 100px;
     font-size: 14px;
     padding: 0 16px;
     height: 36px;
@@ -116,12 +125,11 @@ header {
 #lcky_bttn {
     position: relative;
     bottom: 0;
-    left: 0;
-    margin: 11px 4px;
+    margin: 11px 100px 11px 4px;
     font-size: 14px;
     padding: 0 16px;
     height: 36px;
-    line-height: 27px;
+    line-height: 27px !important;
     min-width: 54px;
     text-align: center;
     cursor: pointer;
@@ -131,14 +139,14 @@ header {
     border: 1px solid #f2f2f2;
 }
 
+
 #search {
     display: inline-block;
     background-color: transparent;
     border-color: rgba(71, 71, 71, 0);
     border-width: 1px;
-    margin: 40px 0 0 0;
+    margin: 50px 0 20px;
     padding: 0;
-    width: auto;
     border-radius: 20%;
 }
 
@@ -151,15 +159,14 @@ input {
     text-indent: 0px;
     text-shadow: none;
     text-align: start;
-    appearance: textfield;
-    -webkit-rtl-ordering: logical;
     cursor: text;
+    width: 600px;
 
 }
 
 #srch_box {
     background-color: transparent;
-    width: 300px;
+    width: 500px;
     margin: -37px 0 0 0;
     padding: 0;
     color: rgba(0,0,0,.87);
